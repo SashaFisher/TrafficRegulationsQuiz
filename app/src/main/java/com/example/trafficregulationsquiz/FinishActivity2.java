@@ -25,12 +25,8 @@ public class FinishActivity2 extends AppCompatActivity {
         Button mTryAgain2 = findViewById(R.id.try_again);
         Button mNext2 = findViewById(R.id.next);
         String stringScore2 = intent2.getStringExtra("mScore2");
-       // String stringScore2 = intent.getStringExtra("mScore2");
         int mScore2 = Integer.parseInt(stringScore2);
         btn_clicked = MediaPlayer.create(this, R.raw.button_clicked);
-
-     //   int mScore2 = Integer.parseInt(stringScore2);
-
 
         if (mScore2 == 14)
             mCongratsView2.setText("Превосходно!");
