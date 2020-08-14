@@ -387,29 +387,24 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     public String getChoice1(int a) {
 
         return mChoices[questions.get(a)][variants.get(0)];
- //       return mChoices[quests[a]][vars[0]];
     }
 
     public String getChoice2(int a) {
 
         return mChoices[questions.get(a)][variants.get(1)];
-  //      return mChoices[quests[a]][vars[1]];
     }
 
     public String getChoice3(int a) {
 
         return mChoices[questions.get(a)][variants.get(2)];
-   //     return mChoices[quests[a]][vars[2]];
     }
     public String getChoice4(int a) {
 
         return mChoices[questions.get(a)][variants.get(3)];
-    //    return mChoices[quests[a]][vars[3]];
     }
 
     public String getCorrectAnswer(int a) {
 
         return mCorrectAnswers[questions.get(a)];
-      //  return mCorrectAnswers[quests[a]];
     }
 }
