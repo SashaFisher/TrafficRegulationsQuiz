@@ -22,7 +22,6 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
     private TextView mScoreView2, mWrongAnswersView2, mQuestionView2;
     private Button mButtonChoice12, mButtonChoice22, mButtonChoice32, mButtonChoice42;
     private GradientDrawable mGradientDrawable12, mGradientDrawable22, mGradientDrawable32, mGradientDrawable42;
-    //private QuizActivity quizActivity = new QuizActivity();
 
     private Handler handler2 = new Handler();
     private String mAnswer2;
@@ -101,11 +100,9 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
             case R.id.choice12:
 
                 if (mButtonChoice12.getText() == mAnswer2){
-                 //   mButtonChoice1.setBackgroundColor(Color.GREEN);
                     mGradientDrawable12.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                 //   mButtonChoice1.setBackgroundColor(Color.RED);
                     mGradientDrawable12.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -114,11 +111,9 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
             case R.id.choice22:
 
                 if (mButtonChoice22.getText() == mAnswer2){
-                   // mButtonChoice2.setBackgroundColor(Color.GREEN);
                    mGradientDrawable22.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                  //  mButtonChoice2.setBackgroundColor(Color.RED);
                     mGradientDrawable22.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -127,11 +122,9 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
             case R.id.choice32:
 
                 if (mButtonChoice32.getText() == mAnswer2){
-                  //  mButtonChoice3.setBackgroundColor(Color.GREEN);
                     mGradientDrawable32.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                  //  mButtonChoice3.setBackgroundColor(Color.RED);
                     mGradientDrawable32.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -140,11 +133,9 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
             case R.id.choice42:
 
                 if (mButtonChoice42.getText() == mAnswer2){
-                  //  mButtonChoice4.setBackgroundColor(Color.GREEN);
                     mGradientDrawable42.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                   // mButtonChoice4.setBackgroundColor(Color.RED);
                     mGradientDrawable42.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -182,11 +173,7 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
                     mGradientDrawable12.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable22.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable32.setColor(Color.rgb(49, 90, 115));
-                    mGradientDrawable42.setColor(Color.rgb(49, 90, 115));
-                    /*mButtonChoice1.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice2.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice3.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice4.setBackgroundColor(Color.rgb(49, 90, 115));*/
+                    mGradientDrawable42.setColor(Color.rgb(49, 90, 115));             
                     mButtonChoice12.setEnabled(true);
                     mButtonChoice22.setEnabled(true);
                     mButtonChoice32.setEnabled(true);
@@ -202,10 +189,6 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
                     mGradientDrawable22.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable32.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable42.setColor(Color.rgb(49, 90, 115));
-                   /* mButtonChoice1.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice2.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice3.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice4.setBackgroundColor(Color.rgb(49, 90, 115));*/
                     mButtonChoice12.setEnabled(true);
                     mButtonChoice22.setEnabled(true);
                     mButtonChoice32.setEnabled(true);
@@ -226,16 +209,12 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
         wrongAudio2.start();
 
         if (mButtonChoice12.getText() == mAnswer2)
-            //mButtonChoice1.setBackgroundColor(Color.GREEN);
             mGradientDrawable12.setColor(Color.GREEN);
         else if (mButtonChoice22.getText() == mAnswer2)
-       //     mButtonChoice2.setBackgroundColor(Color.GREEN);
             mGradientDrawable22.setColor(Color.GREEN);
         else if(mButtonChoice32.getText() == mAnswer2)
-     //       mButtonChoice3.setBackgroundColor(Color.GREEN);
             mGradientDrawable32.setColor(Color.GREEN);
         else
-       //     mButtonChoice4.setBackgroundColor(Color.GREEN);
             mGradientDrawable42.setColor(Color.GREEN);
 
         if (mQuestionNumber2==14) {
@@ -246,10 +225,6 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
                     mGradientDrawable22.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable32.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable42.setColor(Color.rgb(49, 90, 115));
-                    /*mButtonChoice1.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice2.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice3.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice4.setBackgroundColor(Color.rgb(49, 90, 115));*/
                     mButtonChoice12.setEnabled(true);
                     mButtonChoice22.setEnabled(true);
                     mButtonChoice32.setEnabled(true);
@@ -266,10 +241,6 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
                     mGradientDrawable22.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable32.setColor(Color.rgb(49, 90, 115));
                     mGradientDrawable42.setColor(Color.rgb(49, 90, 115));
-                   /* mButtonChoice1.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice2.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice3.setBackgroundColor(Color.rgb(49, 90, 115));
-                    mButtonChoice4.setBackgroundColor(Color.rgb(49, 90, 115));*/
                     mButtonChoice12.setEnabled(true);
                     mButtonChoice22.setEnabled(true);
                     mButtonChoice32.setEnabled(true);
@@ -397,38 +368,28 @@ public class SecondQuizActivity extends AppCompatActivity implements View.OnClic
     public String getChoice12(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(0)];
-        //       return mChoices[quests[a]][vars[0]];
     }
 
     public String getChoice22(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(1)];
-        //      return mChoices[quests[a]][vars[1]];
     }
 
     public String getChoice32(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(2)];
-        //     return mChoices[quests[a]][vars[2]];
     }
     public String getChoice42(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(3)];
-        //    return mChoices[quests[a]][vars[3]];
     }
 
     public String getCorrectAnswer2(int a) {
 
         return mCorrectAnswers2[questions2.get(a)];
-        //  return mCorrectAnswers[quests[a]];
     }
     public String getQuestion2(int a) {
 
         return mQuestions2[questions2.get(a)];
-        //  return mCorrectAnswers[quests[a]];
     }
-
-
-
-
 }
