@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2A33"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Плохо"
+            android:textColor="#446980"
+            android:textSize="50sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:text="Ваш результат:"
+            android:textColor="#446980"
+            android:textSize="35sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0/10"
+            android:textColor="#9D2A33"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/try_again"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:rotation="190"
+            android:background="@drawable/try_again"/>
+
+        <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/next"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forward_button"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
