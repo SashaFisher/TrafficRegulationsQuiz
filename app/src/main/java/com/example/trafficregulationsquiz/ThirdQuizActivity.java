@@ -96,12 +96,10 @@ public class ThirdQuizActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.choice12:
 
-                if (mButtonChoice12.getText() == mAnswer2){
-                    //   mButtonChoice1.setBackgroundColor(Color.GREEN);
+                if (mButtonChoice12.getText() == mAnswer2){                  
                     mGradientDrawable12.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                    //   mButtonChoice1.setBackgroundColor(Color.RED);
                     mGradientDrawable12.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -110,11 +108,9 @@ public class ThirdQuizActivity extends AppCompatActivity implements View.OnClick
             case R.id.choice22:
 
                 if (mButtonChoice22.getText() == mAnswer2){
-                    // mButtonChoice2.setBackgroundColor(Color.GREEN);
                     mGradientDrawable22.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                    //  mButtonChoice2.setBackgroundColor(Color.RED);
                     mGradientDrawable22.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -123,11 +119,9 @@ public class ThirdQuizActivity extends AppCompatActivity implements View.OnClick
             case R.id.choice32:
 
                 if (mButtonChoice32.getText() == mAnswer2){
-                    //  mButtonChoice3.setBackgroundColor(Color.GREEN);
                     mGradientDrawable32.setColor(Color.GREEN);
                     correctChoice2();
                 } else {
-                    //  mButtonChoice3.setBackgroundColor(Color.RED);
                     mGradientDrawable32.setColor(Color.RED);
                     wrongChoice2();
                 }
@@ -340,30 +334,24 @@ public class ThirdQuizActivity extends AppCompatActivity implements View.OnClick
     public String getChoice12(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(0)];
-        //       return mChoices[quests[a]][vars[0]];
     }
 
     public String getChoice22(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(1)];
-        //      return mChoices[quests[a]][vars[1]];
     }
 
     public String getChoice32(int a) {
 
         return mChoices2[questions2.get(a)][variants2.get(2)];
-        //     return mChoices[quests[a]][vars[2]];
     }
 
     public String getCorrectAnswer2(int a) {
 
         return mCorrectAnswers2[questions2.get(a)];
-        //  return mCorrectAnswers[quests[a]];
     }
     public String getQuestion2(int a) {
 
         return mQuestions2[questions2.get(a)];
-        //  return mCorrectAnswers[quests[a]];
     }
-
 }
